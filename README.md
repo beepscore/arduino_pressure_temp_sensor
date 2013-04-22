@@ -35,9 +35,11 @@ For example, the luminosity sensor TSL2561 runs at 3.3 V.
 However, don't use a 5.0v powered i2c device (like the DS1307) with pullups at the same time as a 3.3V device like the TSL2561"
 http://learn.adafruit.com/tsl2561/wiring
 
-| Sensor | Arduino Duemilanove Pin |
-| ------ | ----------------------- |
-| Vin    | 3V                      |
-| GND    | GND                     |
-| SCL    | 5                       |
-| SDA    | 4                       |
+| Sensor | Arduino Duemilanove Pin | Arduino Leonardo Pin | Arduino Due Pin  |
+| ------ | ----------------------- | -------------------- | ---------------- |
+| Vin    | 3.3V                    | 3.3V                 | 3.3V             |
+| GND    | GND                     | GND                  | GND              |
+| SDA    | A4                      | D2                   | D20 or SDA1      |
+| SCL    | A5                      | D3                   | D21 or SCL1      |
+
+http://arduino.cc/en/Reference/Wire
