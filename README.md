@@ -6,7 +6,7 @@ Adafruit BMP085
 
 # Equipment
 ## Hardware
-Arduino Duemilanove "2009"  
+Arduino Duemilanove w/ ATmega328 (Duemilanove="2009")
 
 BMP085 Barometric Pressure/Temperature/Altitude Sensor- 5V ready
 https://adafruit.com/products/391
