@@ -26,7 +26,12 @@
 Adafruit_BMP085 bmp;
 
 void setup() {
+
+    // Use serial port
+    // When port is transmitting, Tx LED will blink
+    // In Ardiuno IDE, open serial monitor and select baud rate to match
     Serial.begin(9600);
+
     if (!bmp.begin()) {
         Serial.println("Could not find a valid BMP085 sensor, check wiring!");
         while (1) {}
